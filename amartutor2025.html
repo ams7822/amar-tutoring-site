@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Amar Math Lab — Premium Online Math Coaching</title>
+  <meta name="description" content="Premium online math coaching for motivated students. Small pods and 1:1 instruction for Algebra, Geometry, Pre-Calculus, and SAT/ACT Math—led by a current public-school teacher." />
+  <link rel="preconnect" href="https://images.unsplash.com" />
+  <link rel="dns-prefetch" href="https://images.unsplash.com" />
+  <style>
+    :root{
+      --bg:#070b15;
+      --ink:#eef2f7;
+      --muted:#a6afbf;
+      --panel:#0e1729;
+      --accent:#22c55e;
+      --accent2:#60a5fa;
+      --border:1px solid rgba(255,255,255,.10);
+      --radius:18px;
+      --shadow:0 14px 40px rgba(0,0,0,.45);
+      --max:1200px;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif;line-height:1.6}
+    img{max-width:100%;display:block}
+    a{color:var(--accent2);text-decoration:none}
+    .wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+    .btn{display:inline-flex;align-items:center;gap:10px;background:var(--accent);color:#03250f;border:0;border-radius:12px;padding:12px 18px;font-weight:800;cursor:pointer}
+    .btn.alt{background:transparent;border:1px solid rgba(255,255,255,.2);color:#d9e1ef}
+    .muted{color:var(--muted)}
+    header{position:sticky;top:0;z-index:20;background:rgba(7,11,21,.6);backdrop-filter:blur(8px);border-bottom:var(--border)}
+    .nav{display:flex;justify-content:space-between;align-items:center;padding:14px 0}
+    .logo{font-weight:900;letter-spacing:.5px;display:flex;gap:10px;align-items:center}
+    .nav a{color:#dbe5f5}
+    .nav .links{display:flex;gap:18px;align-items:center}
+
+    .hero{position:relative;min-height:84vh;display:grid;place-items:center;overflow:hidden}
+    .hero::before{
+      content:"";position:absolute;inset:0;
+      background:url('https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?auto=format&fit=crop&w=2000&q=80') center/cover no-repeat;
+      filter:brightness(.55);
+    }
+    .hero .content{position:relative;z-index:2}
+    .hero h1{font-size:54px;line-height:1.08;margin:0 0 6px;text-shadow:0 6px 40px rgba(0,0,0,.45)}
+    .hero p.lead{font-size:18px;color:#cfd7e6;margin:0 0 16px}
+    .hero .row{display:flex;gap:12px;flex-wrap:wrap}
+
+    section{padding:48px 0}
+    h2{font-size:32px;margin:6px 0 10px}
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+    .card{background:linear-gradient(180deg,rgba(255,255,255,.04),rgba(255,255,255,.02));border:var(--border);border-radius:var(--radius);padding:18px;box-shadow:var(--shadow)}
+
+    .gallery img{border-radius:14px;border:1px solid rgba(255,255,255,.09)}
+    .kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+    .kpi .n{font-size:28px;font-weight:900}
+    .pill{display:inline-block;padding:5px 10px;border-radius:999px;background:rgba(96,165,250,.15);color:#cfe7ff;font-size:12px}
+
+    footer{border-top:var(--border);padding:24px 0;color:var(--muted)}
+
+    @media (max-width: 980px){
+      .hero h1{font-size:38px}
+      .grid-3{grid-template-columns:1fr}
+      .grid-2{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <div class="logo">
+        <svg width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="2" y="2" width="44" height="44" rx="10" stroke="#60a5fa" stroke-width="3"/>
+          <path d="M12 32c3-10 9-16 18-16" stroke="#22c55e" stroke-width="3" stroke-linecap="round"/>
+          <text x="24" y="30" text-anchor="middle" fill="#e5e7eb" font-size="14" font-family="Inter, Arial, sans-serif">∑</text>
+        </svg>
+        AMAR MATH LAB
+      </div>
+      <nav class="links">
+        <a href="#programs">Programs</a>
+        <a href="#method">Method</a>
+        <a href="#results">Results</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#lead">Free packs</a>
+        <a href="#schedule" class="btn">Book diagnostic</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" aria-label="Hero">
+    <div class="content wrap">
+      <span class="pill">Premium online math coaching • Nationwide</span>
+      <h1>Clarity. Velocity. Results.</h1>
+      <p class="lead">High-impact pods and 1:1 for Algebra, Geometry, Pre-Calculus, and SAT/ACT Math—led by a current public-school teacher.</p>
+      <div class="row">
+        <a href="#schedule" onclick="openCalendly();return false;" class="btn">Free 15-min Diagnostic →</a>
+        <a href="#lead" class="btn alt">Download Readiness Pack</a>
+      </div>
+      <div class="kpis" style="margin-top:14px">
+        <div class="card kpi"><div class="n">+1–2</div><div class="muted">letter grades in one term (typical)</div></div>
+        <div class="card kpi"><div class="n">80–150</div><div class="muted">SAT Math point gains (typical)</div></div>
+        <div class="card kpi"><div class="n">4–6</div><div class="muted">students per pod</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="programs">
+    <div class="wrap">
+      <h2>Programs</h2>
+      <p class="muted">Tight, focused sessions that turn confusion into competence—fast.</p>
+      <div class="grid-3">
+        <div class="card">
+          <h3>Algebra II Mastery Pods</h3>
+          <p class="muted">Targeted practice on factoring, quadratics, rational functions, and exponent logic.</p>
+          <ul>
+            <li>Small cohorts (4–6) grouped by skill band</li>
+            <li>Weekly mastery checks + feedback</li>
+            <li>Bi-weekly parent update email</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Pre-Calculus Accelerator</h3>
+          <p class="muted">Functions and transformations. Trig fluency. Exponential & log modeling—with rigor.</p>
+          <ul>
+            <li>Unit circle fluency without memorization</li>
+            <li>Modeling & interpretation on real data</li>
+            <li>Exam prep built into the cadence</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>SAT/ACT Math Intensive</h3>
+          <p class="muted">Four-week sprint: formula pack + timed drills + error decoding.</p>
+          <ul>
+            <li>Band-based practice (500–650, 650–750+)</li>
+            <li>Live strategy labs and checkpoints</li>
+            <li>Clear score growth plan</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="method">
+    <div class="wrap">
+      <h2>Our method</h2>
+      <div class="grid-2">
+        <div class="card">
+          <ol>
+            <li><strong>Rapid diagnostic</strong> — find the two big blockers.</li>
+            <li><strong>Precision plan</strong> — weekly targets + 15-minute drills.</li>
+            <li><strong>Live coaching</strong> — teach → try → correct → master.</li>
+            <li><strong>Measured progress</strong> — bi-weekly snapshots to parents.</li>
+          </ol>
+        </div>
+        <div class="card gallery">
+          <img
+            src="https://images.unsplash.com/photo-1517976487492-576ea6b2936d?auto=format&fit=crop&w=1200&q=80"
+            srcset="https://images.unsplash.com/photo-1517976487492-576ea6b2936d?auto=format&fit=crop&w=800&q=70 800w,
+                    https://images.unsplash.com/photo-1517976487492-576ea6b2936d?auto=format&fit=crop&w=1600&q=80 1600w"
+            sizes="(max-width:900px) 100vw, 50vw"
+            alt="Student learning math online" loading="lazy" />
+          <div class="grid-2" style="margin-top:10px">
+            <img src="https://images.unsplash.com/photo-1529101091764-c3526daf38fe?auto=format&fit=crop&w=1200&q=80" alt="Notebook with geometric drawings" loading="lazy" />
+            <img src="https://images.unsplash.com/photo-1509223197845-458d87318791?auto=format&fit=crop&w=1200&q=80" alt="Chalkboard equations" loading="lazy" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="results">
+    <div class="wrap">
+      <h2>Results families notice</h2>
+      <div class="grid-2">
+        <div class="card">
+          <p>“From a 72 to an 88 in five weeks. The plan was clear and the pod kept him accountable.”</p>
+          <p class="muted">— Parent of 10th grader (Algebra II)</p>
+        </div>
+        <div class="card">
+          <p>“Pre-Calc finally clicked. The way transformations were taught changed everything.”</p>
+          <p class="muted">— 11th grader</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="pricing">
+    <div class="wrap">
+      <h2>Simple pricing</h2>
+      <div class="grid-3">
+        <div class="card">
+          <div class="pill">Pods</div>
+          <h3>1× / week</h3>
+          <p class="muted">4–6 students · 60 minutes</p>
+          <p style="font-size:28px;font-weight:900">$229/mo</p>
+          <a class="btn alt" href="REPLACE_WITH_STRIPE_LINK_PODS_1X">Enroll</a>
+        </div>
+        <div class="card">
+          <div class="pill">Pods</div>
+          <h3>2× / week</h3>
+          <p class="muted">4–6 students · 60 minutes</p>
+          <p style="font-size:28px;font-weight:900">$379/mo</p>
+          <a class="btn alt" href="REPLACE_WITH_STRIPE_LINK_PODS_2X">Enroll</a>
+        </div>
+        <div class="card">
+          <div class="pill">1:1</div>
+          <h3>Personal Coaching</h3>
+          <p class="muted">4×60 min per month</p>
+          <p style="font-size:28px;font-weight:900">$449/mo</p>
+          <a class="btn alt" href="REPLACE_WITH_STRIPE_LINK_1ON1_MONTHLY">Enroll</a>
+        </div>
+      </div>
+      <p class="muted" style="margin-top:8px">Need-based scholarships available. School/PTO pods by request.</p>
+    </div>
+  </section>
+
+  <section id="lead">
+    <div class="wrap">
+      <h2>Free study packs</h2>
+      <div class="grid-2">
+        <div class="card">
+          <h3>Pre-Calc Readiness Diagnostic</h3>
+          <p class="muted">12-question skill check, answer key, formula sheet, and 30-day plan.</p>
+          <a class="btn" href="Amar_Math_Lab_PreCalc_Readiness_Pack.pdf" download>Download</a>
+        </div>
+        <div class="card">
+          <h3>SAT® Math Formula & Drill Pack</h3>
+          <p class="muted">Formulas by domain + timed drills and full answer key.</p>
+          <a class="btn" href="Amar_Math_Lab_SAT_Math_Formula_Drill_Pack.pdf" download>Download</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="schedule">
+    <div class="wrap">
+      <h2>Book a free diagnostic</h2>
+      <p class="muted">15 minutes on Zoom/Meet. You’ll receive a written summary and next-step plan the same day.</p>
+      <div class="card">
+        <p><strong>Popup scheduler:</strong> Click to open.</p>
+        <button class="btn" onclick="openCalendly()">Open Calendar</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="compliance">
+    <div class="wrap">
+      <h2>Ethics & compliance</h2>
+      <div class="card">
+        <p><strong>Important:</strong> Amar Math Lab is independent and not affiliated with Tulsa Public Schools (TPS). I do not market to my current TPS students or their families, and I do not use TPS time, equipment, or resources for tutoring activities. All services occur outside school hours and off school premises.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">© <span id="year"></span> Amar Math Lab · <span class="muted">Privacy: minimal data collected for scheduling and coaching; never sold.</span></div>
+  </footer>
+
+  <!-- Calendly widget -->
+  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+  <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+  <script>
+    // Replace with your real Calendly URL
+    const CALENDLY_URL = "https://calendly.com/YOUR-USERNAME/free-diagnostic";
+    function openCalendly(){ if (window.Calendly) Calendly.initPopupWidget({ url: CALENDLY_URL }); return false; }
+    document.getElementById('year').textContent = new Date().getFullYear()
+  </script>
+</body>
+</html>
